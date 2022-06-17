@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: black;
+    display: flex;
+   
+    height: 100vh;
+}
+
+.navbar{
+    display: inline-block;
+  margin:  40px;
+ 
+ 
+   
+}
+.navbar a{
+    color: blue;
+    padding: 0px;
+    margin: 10px 30px;
+    
+    
+    text-decoration: none;
+}
+
+
+main{
+    display:grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e'
+    ;
+    gap: 15px ;
+    width: 40%;
+    margin: auto;
+} 
+    main div{
+        padding: 16%;
+        text-align: center;
+}
+.one{
+    background-color: red;
+    grid-area: a;
+}
+.two{
+    background-color: orange;
+    grid-area: b;
+}
+.three{
+    background-color: green;
+    grid-area: c;
+}
+.four{
+    background: purple;
+    grid-area: d;
+}
+.five{
+    background-color:purple;
+    grid-area: e;
+}
